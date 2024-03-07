@@ -49,12 +49,12 @@ const Contact = () => {
                                 />
                             </div>
                             <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" className="text-green-500 mt-8">
-                                Leave a message and we'll get back to you.
+                                {"Leave a message and we'll get back to you."}
                             </div>
                         </div>
                         <div className="">
                             <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-                                <span className="text-sm text-green-600 font-bold">What's your name?</span>
+                                <span className="text-sm text-green-600 font-bold">{"What's your name?"}</span>
                                 <input
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
