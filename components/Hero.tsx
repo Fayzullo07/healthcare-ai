@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "./providers/Container";
 import { ArrowUpRightIcon } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
     const dataHero = [
@@ -18,6 +19,7 @@ const Hero = () => {
         },
 
     ]
+
     return (
         <div >
             <Container>
@@ -35,7 +37,6 @@ const Hero = () => {
                                         <a href="#!" className="transition duration-300 transform hover:scale-110 flex items-center w-full px-6 py-3 mb-3 text-lg text-black bg-green-300 rounded-3xl sm:mb-0 font-semibold tracking-wide hover:bg-green-400 hover:text-white sm:w-auto">
                                             Consulting Now
                                         </a>
-
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +59,9 @@ const Hero = () => {
                                             />
                                         </div>
                                         <div className=" text-base cursor-pointer hover:scale-110 duration-500 absolute bottom-0 text-center py-3 bg-green-300 w-full rounded-2xl sm:rounded-bl-3xl sm:rounded-tr-3xl">
-                                            {item.text}
+                                            <Link href={"/voice"}>
+                                                {item.text}
+                                            </Link>
                                         </div>
                                     </div>
                                 ))}
