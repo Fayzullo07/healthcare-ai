@@ -75,8 +75,14 @@
   }
 }
 
+/* Hero */
+.scans_back_img {
+  background: url("/public/scans.png") no-repeat top center / cover;
+}
+
 /* Navbar */
 .active {
+  /* background: white; */
   left: 0;
   position: fixed;
   top: 0;
