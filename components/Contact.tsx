@@ -14,15 +14,19 @@ const Contact = () => {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
-
         if (!name || !phone || !desc) {
             toast.warning("Fill it completely!");
             return
         }
-        toast.success("Sent, we will contact you, thank you!");
-        setName("");
-        setPhone("");
-        setDesc("");
+        setLoading(true);
+        setTimeout(() => {
+            toast.success("Sent, we will contact you, thank you!");
+            setName("");
+            setPhone("");
+            setDesc("");
+            setLoading(false);
+        }, 1000)
+
 
     };
 

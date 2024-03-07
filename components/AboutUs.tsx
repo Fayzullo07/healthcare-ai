@@ -3,7 +3,7 @@ import Container from "./providers/Container";
 
 const AboutUs = () => {
     return (
-        <section id="" className="bg-white">
+        <section id="about" className="bg-white">
             <Container> 
                 <div className="max-w-6xl grid gap-8 grid-cols-1 md:grid-cols-2 py-16 mx-auto">
                     <div className=" flex justify-center text-xl text-green-500">

@@ -1,12 +1,10 @@
 import Image from "next/image";
-import { AwardIcon, Building2Icon, SmilePlusIcon, User2Icon } from "lucide-react";
 import Container from "./providers/Container";
-
 
 
 const Scans = () => {
     return (
-        <div className=" relative ">
+        <div className="relative">
             <div className=" w-full absolute top-0 -z-10 h-full overflow-hidden hidden sm:block">
 
                 <Image

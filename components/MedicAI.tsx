@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Container from "./providers/Container";
 
-
-
 const MedicAI = () => {
     return (
-        <div className=" ">
+        <div id="ai_services">
 
             <Container>
 

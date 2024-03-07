@@ -17,15 +17,16 @@ const Navbar = () => {
     });
 
     const navbar = [
-        { name: "AI Services", slug: "/ai_services" },
-        { name: "Our Doctors", slug: "/our_doctors" },
-        { name: "About Us", slug: "/about_us" },
+        { name: "AI Services", slug: "/#ai_services" },
+        { name: "Our Doctors", slug: "/#our_doctors" },
+        { name: "About Us", slug: "/#about" },
+        { name: "Contact Us", slug: "/#contact" },
     ];
     return (
         <header className="">
             <nav className={`${stickyNav ? "active" : ""} bg-green-200   flex flex-wrap items-center justify-between w-full py-2  md:py-1 px-4 text-lg text-gray-700  z-10`}>
                 <div data-aos="fade-right" data-aos-delay="100">
-                    <a href={"/"} className="flex justify-center items-center gap-2">
+                    <a href="#" className="flex justify-center items-center gap-2">
 
                         <div className="w-32 sm:w-40">
                             <Image
@@ -48,7 +49,7 @@ const Navbar = () => {
                         className="pt-2 text-lg text-gray-700 md:flex md:justify-between md:pt-0">
                         {navbar.map((item, i) => (
                             <li key={item.name} data-aos="fade-left" data-aos-delay={(i + 1) * 100}>
-                                <a href={item.slug} className="md:p-4 py-2 block hover:text-purple-400">
+                                <a href={item.slug} className="md:p-4 py-2 block hover:text-purple-400" onClick={() => setNav(false)}>
                                     {item.name}
                                 </a>
                             </li>

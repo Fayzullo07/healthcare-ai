@@ -16,10 +16,10 @@ const Hero = () => {
             img: "/voice.png",
             text: "Speech Consulting"
         },
-       
+
     ]
     return (
-        <div className="">
+        <div >
             <Container>
                 <section className="py-10 sm:py-24 md:px-0 bg-white">
                     <div className=" items-center max-w-6xl px-8 mx-auto xl:px-5">

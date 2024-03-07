@@ -1,12 +1,9 @@
 import Image from "next/image";
-import { AwardIcon, Building2Icon, SmilePlusIcon, User2Icon } from "lucide-react";
 import Container from "./providers/Container";
-
-
 
 const VoiceAI = () => {
     return (
-        <div className=" ">
+        <div>
 
             <Container>
 
